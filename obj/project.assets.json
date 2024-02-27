@@ -46,11 +46,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\Word Dictionay Manager.csproj",
+      "projectUniqueName": "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\Word Dictionary Manager\\Word Dictionay Manager.csproj",
       "projectName": "Word Dictionay Manager",
-      "projectPath": "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\Word Dictionay Manager.csproj",
+      "projectPath": "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\Word Dictionary Manager\\Word Dictionay Manager.csproj",
       "packagesPath": "C:\\Users\\tipzi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\obj\\",
+      "outputPath": "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\Word Dictionary Manager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

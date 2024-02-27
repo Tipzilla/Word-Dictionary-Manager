@@ -30,8 +30,22 @@ namespace Word_Dictionary_Manager
 
         public void Delete(TKey key)
         {
-            entries.RemoveAll(entry => EqualityComparer<TKey>.Default.Equals(entry.Key, key));
+            if (entries.Any(entry => EqualityComparer<TKey>.Default.Equals(entry.Key, key)))
+            {
+                entries.RemoveAll(entry => EqualityComparer<TKey>.Default.Equals(entry.Key, key));
+                Console.WriteLine($"Word '{key}' deleted from the dictionary.");
+            }
+            else
+            {
+                Console.WriteLine($"Word '{key}' not found in the dictionary.");
+            }
         }
+
+        public void Clear()
+        {
+            entries.Clear();
+        }
+
 
         public void Print()
         {
@@ -41,7 +55,6 @@ namespace Word_Dictionary_Manager
             }
         }
 
-        // Public method to get entries
         public List<KeyValuePair<TKey, TValue>> GetEntries()
         {
             return entries;
