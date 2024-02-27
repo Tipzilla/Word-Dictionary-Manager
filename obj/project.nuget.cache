@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "TPoL0F/hR4E1FVN/R7wEkiYz9qtYA2SjA7RJVqqek2RGvAaP4Dnay/mb8UHSJBvpHg6RRCk7JcNeqs1vf1D5Sw==",
+  "dgSpecHash": "rtoTgyfZkce4kIbaEFhsv8b6/ncKQCYQJS38h670IwD4vKlN07v+aDN/IeFkUBs3T4yu80auxOVIJQbAW5r1Zg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\Solution\\Assessment 1.csproj",
+  "projectFilePath": "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\Word Dictionay Manager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tipzi\\.nuget\\packages\\figgle\\0.5.1\\figgle.0.5.1.nupkg.sha512",
-    "C:\\Users\\tipzi\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.24\\microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
     "C:\\Users\\tipzi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.24\\microsoft.windowsdesktop.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\tipzi\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.24\\microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
     "C:\\Users\\tipzi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.24\\microsoft.aspnetcore.app.ref.6.0.24.nupkg.sha512",
     "C:\\Users\\tipzi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.24\\microsoft.netcore.app.host.win-x64.6.0.24.nupkg.sha512"
   ],

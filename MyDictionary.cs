@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Assessment_1
+namespace Word_Dictionary_Manager
 {
     public class MyDictionary<TKey, TValue>
     {

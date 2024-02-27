@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\Assessment 1.csproj": {}
+    "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\Word Dictionay Manager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\Assessment 1.csproj": {
+    "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\Word Dictionay Manager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\Assessment 1.csproj",
-        "projectName": "Assessment 1",
-        "projectPath": "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\Assessment 1.csproj",
+        "projectUniqueName": "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\Word Dictionay Manager.csproj",
+        "projectName": "Word Dictionay Manager",
+        "projectPath": "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\Word Dictionay Manager.csproj",
         "packagesPath": "C:\\Users\\tipzi\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\tipzi\\Desktop\\Coding\\School Work\\COMP605 Data Structures and Algorithms\\Assessment 1\\obj\\",
         "projectStyle": "PackageReference",

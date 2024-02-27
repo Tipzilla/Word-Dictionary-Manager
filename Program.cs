@@ -1,6 +1,6 @@
 ﻿using Figgle;
 
-namespace Assessment_1
+namespace Word_Dictionary_Manager
 {
     internal class Program
     {
