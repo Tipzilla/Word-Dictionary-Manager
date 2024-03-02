@@ -16,64 +16,66 @@ namespace Word_Dictionary_Manager
             PrintLineBreak();
 
             Console.Write("This application can:\n" +
-                "- Read data from the given text files.\n" +
-                "- Insert that data into a dictionary.\n" +
-                "- Find data from within the dictionary contents.\n" +
-                "- Print the dictionary contents.\n" +
-                "- Perform other functionalities.\n\n");
+                "- Load File: Import data from specified text files into the dictionary.\n" +
+                "- Insert Word: Add new words to the dictionary, avoiding duplicates.\n" +
+                "- Find Word: Search for a specific word within the dictionary and retrieve its details.\n" +
+                "- Delete: Choose to remove a particular word or clear the entire dictionary (caution: irreversible).\n" +
+                "- Print Dictionary: Display the current contents of the dictionary.\n" +
+                "- Exit: Close the application.\n\n");
 
             Console.Write("Press any key to get started: ");
         }
 
         static void MainMenu()
         {
-            Console.ReadKey();
-
-            Console.Clear();
-
-            PrintLineBreak();
-
-            Console.Write("1. Load File\n" +
-                "2. Insert Word\n" +
-                "3. Find Word\n" +
-                "4. Delete\n" +
-                "5. Print Dictionary\n" +
-                "6. Exit\n" +
-                "Select an option: ");
-
-            string choice = Console.ReadLine();
-
-            switch (choice)
+            while (true)
             {
-                case "1":
-                    FileMenu(dictionary);
-                    break;
+                Console.ReadKey();
+                Console.Clear();
 
-                case "2":
-                    InsertMenu(dictionary);
-                    break;
+                PrintLineBreak();
 
-                case "3":
-                    FindMenu(dictionary);
-                    break;
+                Console.Write("1. Load File\n" +
+                    "2. Insert Word\n" +
+                    "3. Find Word\n" +
+                    "4. Delete\n" +
+                    "5. Print Dictionary\n" +
+                    "6. Exit\n" +
+                    "Select an option: ");
 
-                case "4":
-                    DeleteMenu(dictionary);
-                    break;
+                string choice = Console.ReadLine();
 
-                case "5":
-                    PrintMenu(dictionary);
-                    break;
+                switch (choice)
+                {
+                    case "1":
+                        FileMenu(dictionary);
+                        break;
 
-                case "6":
-                    Environment.Exit(0);
-                    break;
+                    case "2":
+                        InsertMenu(dictionary);
+                        break;
 
-                default:
-                    Console.WriteLine("Invalid choice. Please try again.");
-                    Console.Write("Press any key to continue: ");
-                    MainMenu();
-                    break;
+                    case "3":
+                        FindMenu(dictionary);
+                        break;
+
+                    case "4":
+                        DeleteMenu(dictionary);
+                        break;
+
+                    case "5":
+                        PrintMenu(dictionary);
+                        break;
+
+                    case "6":
+                        Environment.Exit(0);
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid choice. Please try again.");
+                        Console.Write("Press any key to continue: ");
+                        break;
+                }
             }
         }
 
