@@ -145,6 +145,10 @@ namespace Word_Dictionary_Manager
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
 
+                Console.WriteLine($"Clearing the current dictionary...");
+
+                dictionary.Clear();  // Clear the existing dictionary before inserting from the file
+
                 Console.WriteLine($"Inserting words from {filePath} into the dictionary...");
 
                 ReadFile(filePath, dictionary);
@@ -168,6 +172,8 @@ namespace Word_Dictionary_Manager
         {
             int wordsInserted = 0;
 
+            int duplicateWords = 0;
+
             try
             {
                 string[] lines = File.ReadAllLines(filePath);
@@ -182,16 +188,16 @@ namespace Word_Dictionary_Manager
                             dictionary.Add(line, node);
 
                             wordsInserted++;
-                            Console.WriteLine($"Word '{line}' inserted into the dictionary.");
 
                         }
                         else
                         {
-                            Console.WriteLine($"Duplicate key found: {line}. Skipping insertion.");
+                            duplicateWords++;
                         }
                     }
                 }
                 PrintLineBreak();
+                Console.WriteLine($"Duplicate keys found: {duplicateWords}. Skipped insertions.");
                 Console.WriteLine($"{wordsInserted} words inserted into the dictionary successfully.");
             }
             catch (Exception ex)
@@ -220,9 +226,7 @@ namespace Word_Dictionary_Manager
                     stopwatch.Stop(); 
                     TimeSpan elapsedTime = stopwatch.Elapsed;
 
-                    string formattedElapsedTime = elapsedTime.TotalSeconds.ToString("0.##############");
-
-                    Console.WriteLine($"Time taken for insertion: {formattedElapsedTime} seconds");
+                    Console.WriteLine($"Time taken for insertion: {elapsedTime.TotalMilliseconds} milliseconds");
 
                     Console.WriteLine($"Word '{wordToInsert}' inserted into the dictionary.");
                 }
@@ -255,8 +259,6 @@ namespace Word_Dictionary_Manager
             stopwatch.Stop(); 
             TimeSpan elapsedTime = stopwatch.Elapsed;
 
-            string formattedElapsedTime = elapsedTime.TotalSeconds.ToString("0.##############");
-
             if (foundNode != null)
             {
                 Console.WriteLine($"Word '{wordToFind}' found. Details: {foundNode.Word}, {foundNode.Length}");
@@ -267,7 +269,7 @@ namespace Word_Dictionary_Manager
             }
 
             
-            Console.WriteLine($"Time taken for find operation: {formattedElapsedTime} seconds");
+            Console.WriteLine($"Time taken for find operation: {elapsedTime.TotalMilliseconds} milliseconds");
 
             Console.Write("Press any key to continue: ");
             MainMenu();
@@ -336,6 +338,9 @@ namespace Word_Dictionary_Manager
         {
             PrintLineBreak();
 
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+
             Console.WriteLine("Printing Dictionary Contents:");
 
             List<KeyValuePair<string, Node>> entries = dictionary.GetEntries();
@@ -348,6 +353,13 @@ namespace Word_Dictionary_Manager
             {
                 Console.WriteLine("Dictionary is empty.");
             }
+
+            stopwatch.Stop();
+            TimeSpan elapsedTime = stopwatch.Elapsed;
+
+            PrintLineBreak();
+
+            Console.WriteLine($"Time taken: {elapsedTime.TotalMilliseconds} milliseconds");
 
             Console.Write("Press any key to continue: ");
             MainMenu();
